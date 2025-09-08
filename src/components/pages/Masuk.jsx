@@ -12,6 +12,7 @@ export default function Masuk() {
   const handleMasuk = (form) => {
     if (!isRegistered()) {
       setError('Akun belum terdaftar. Silakan daftar dulu.');
+      window.alert('You have to register first');
       return nav('/daftar');
     }
     setLoggedIn();
