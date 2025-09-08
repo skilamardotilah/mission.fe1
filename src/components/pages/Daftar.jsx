@@ -8,8 +8,8 @@ import Logo from '../../assets/img/Logo.png';
 export default function Daftar() {
   const nav = useNavigate();
 
-  const handleDaftar = (e) => {
-    e.preventDefault();
+  const handleDaftar = (form, e) => {
+    e?.preventDefault?.();
     setRegistered();
     nav('/masuk');
   };
